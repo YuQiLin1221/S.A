@@ -10,6 +10,8 @@ public class DangKyAcc : MonoBehaviour
     public TMP_InputField password;
     public TextMeshProUGUI thongbao;
 
+    public GameObject dangKyCanvas; // Canvas đăng ký
+    public GameObject dangNhapCanvas; // Canvas đăng nhập
     public void DangKysButton()
     {
         StartCoroutine(DangKy());
@@ -37,6 +39,10 @@ public class DangKyAcc : MonoBehaviour
                 case "exist": thongbao.text = "tài khoản đã tồn tại..."; 
                     break;
                 case "Ok": thongbao.text = "đăng ký thành công";
+
+                    yield return new WaitForSeconds(0.1f); // Đợi 0.1 giây để người dùng thấy thông báo thành công
+                    dangKyCanvas.SetActive(false); // Ẩn canvas đăng ký
+                    dangNhapCanvas.SetActive(true); // Hiện canvas đăng nhập
                     break;
                 case "ERROR": thongbao.text = "đăng ký không thành công";
                     break;
