@@ -40,7 +40,6 @@ public class DangKyAcc : MonoBehaviour
                     break;
                 case "OK": thongbao.text = "đăng ký thành công";
 
-                    yield return new WaitForSeconds(0.1f); // Đợi 0.1 giây để người dùng thấy thông báo thành công
                     dangKyCanvas.SetActive(false); // Ẩn canvas đăng ký
                     dangNhapCanvas.SetActive(true); // Hiện canvas đăng nhập
                     break;
