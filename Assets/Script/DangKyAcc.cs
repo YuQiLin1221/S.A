@@ -38,7 +38,7 @@ public class DangKyAcc : MonoBehaviour
             {
                 case "exist": thongbao.text = "tài khoản đã tồn tại..."; 
                     break;
-                case "Ok": thongbao.text = "đăng ký thành công";
+                case "OK": thongbao.text = "đăng ký thành công";
 
                     yield return new WaitForSeconds(0.1f); // Đợi 0.1 giây để người dùng thấy thông báo thành công
                     dangKyCanvas.SetActive(false); // Ẩn canvas đăng ký

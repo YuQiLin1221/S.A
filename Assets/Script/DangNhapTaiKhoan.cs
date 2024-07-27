@@ -10,7 +10,9 @@ public class DangNhapTaiKhoan : MonoBehaviour
     public TMP_InputField user;
     public TMP_InputField passwd;
     public TextMeshProUGUI thongbao;
-    public GameObject saveScorePanel; // Giao diện nhập tên và lưu điểm
+    public GameObject Main;
+    public GameObject dangnhap;
+    //public GameObject saveScorePanel; // Giao diện nhập tên và lưu điểm
 
     public void DangNhapButton()
     {
@@ -52,8 +54,11 @@ public class DangNhapTaiKhoan : MonoBehaviour
                 PlayerPrefs.SetString("user", user.text);
                 PlayerPrefs.SetString("passwd", passwd.text);
 
+                Main.SetActive(true);
+                dangnhap.SetActive(false);
+
                 // Hiển thị panel nhập tên và lưu điểm
-                saveScorePanel.SetActive(true);
+                //saveScorePanel.SetActive(true);
             }
         }
     }
