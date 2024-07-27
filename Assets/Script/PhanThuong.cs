@@ -9,12 +9,18 @@ public class PhanThuong : MonoBehaviour
     public int key = 0;
     public int lightBuld = 0;
 
-    public void Thuong()
+    public void ThuongWin()
     {
         goldRanDom();
         diamondR();
         keyRanDom();
         lightBuldRanDom();
+    }
+
+    public void ThuongLose()
+    {
+        goldRanDom();
+        diamondR();
     }
         void goldRanDom()
         {
