@@ -496,7 +496,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 336210893}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 684235243}
+        m_TargetAssemblyTypeName: ChonLMap, Assembly-CSharp
+        m_MethodName: Lv2
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &336210893
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1317,6 +1329,7 @@ GameObject:
   - component: {fileID: 684235242}
   - component: {fileID: 684235241}
   - component: {fileID: 684235240}
+  - component: {fileID: 684235243}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1336,6 +1349,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99677b97df9dd054fa34af7408dc5e64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gold: {fileID: 0}
+  diamond: {fileID: 0}
+  key: {fileID: 0}
+  lightBuld: {fileID: 0}
+  vp: {fileID: 0}
+  W: {fileID: 0}
 --- !u!212 &684235241
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1403,6 +1422,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 723624437}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &684235243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 684235239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6b876b023179e8439b51bc16f92a3a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &689968963
 GameObject:
   m_ObjectHideFlags: 0
@@ -1485,7 +1516,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 689968966}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 684235243}
+        m_TargetAssemblyTypeName: ChonLMap, Assembly-CSharp
+        m_MethodName: Lv1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &689968966
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2283,7 +2326,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1297071965}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 684235243}
+        m_TargetAssemblyTypeName: ChonLMap, Assembly-CSharp
+        m_MethodName: Lv3
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1297071965
 MonoBehaviour:
   m_ObjectHideFlags: 0
