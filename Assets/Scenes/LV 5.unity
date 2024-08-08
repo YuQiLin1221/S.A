@@ -210,7 +210,7 @@ GameObject:
   - component: {fileID: 132464591}
   - component: {fileID: 132464593}
   - component: {fileID: 132464592}
-  - component: {fileID: 132464594}
+  - component: {fileID: 132464595}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -279,7 +279,7 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 132464590}
   m_CullTransparentMesh: 1
---- !u!114 &132464594
+--- !u!114 &132464595
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -288,9 +288,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 132464590}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb01e1431f7bcdf4db67d4766adc7d1c, type: 3}
+  m_Script: {fileID: 11500000, guid: bdf841b871fe69a4096f890abb5c31fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  goldText: {fileID: 1281921697}
+  kcText: {fileID: 1937908007}
+  lightText: {fileID: 1794914269}
+  keyText: {fileID: 1068500753}
+  w: {fileID: 1239218551}
 --- !u!1 &146379912
 GameObject:
   m_ObjectHideFlags: 0
@@ -631,7 +636,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4df062887eb4deb4ea6f8dd5a10b5618, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 5
+  timeRemaining: 30
   timerIsRunning: 0
   lose: {fileID: 1904918044}
   Backgorund: {fileID: 1239218547}
@@ -1909,7 +1914,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -789.45605, y: -260.82104}
+  m_AnchoredPosition: {x: -773.62, y: -260.82}
   m_SizeDelta: {x: 341.07, y: 452.49}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &909635307
@@ -1932,7 +1937,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: f7bfa72c8d471fb4ea0b8e8e701ad6c6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7c6d766ee968d5743a4b7e687638a16f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3056,7 +3061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f31e0064a0614740802659875a9ed9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 132464594}
+  gameManager: {fileID: 0}
   goldAmount: 0
   diamondAmount: 0
   lightAmount: 0
