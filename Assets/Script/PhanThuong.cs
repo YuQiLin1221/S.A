@@ -1,47 +1,47 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using TMPro;
+using UnityEngine.UI; // Đừng quên thêm thư viện này để sử dụng Button  
 
 public class PhanThuong : MonoBehaviour
 {
-    public int gold = 0;
-    public int diamond = 0;
-    public int key = 0;
-    public int lightBuld = 0;
+    public GameManager gameManager; // Tham chiếu đến GameManager  
+    public int goldAmount; // Số lượng vàng  
+    public int diamondAmount; // Số lượng kim cương  
+    public TextMeshProUGUI goldText; // Tham chiếu tới TextMeshPro UI cho vàng  
+    public TextMeshProUGUI diamondText; // Tham chiếu tới TextMeshPro UI cho kim cương  
+    public GameObject objectToActivate; // Tham chiếu tới đối tượng cần bật lên  
+    public Button activateButton; // Tham chiếu tới nút kích hoạt  
 
-    public void ThuongWin()
+    void Start()
     {
-        goldRanDom();
-        diamondR();
-        keyRanDom();
-        lightBuldRanDom();
+        // Khởi tạo vàng và kim cương ngẫu nhiên  
+        goldAmount = Random.Range(0, 100); // Cộng vàng ngẫu nhiên từ 0 đến 99  
+        diamondAmount = Random.Range(0, 50); // Cộng kim cương ngẫu nhiên từ 0 đến 49  
+
+        // Hiển thị số lượng vàng và kim cương  
+        UpdateUI();
+
+        // Đăng ký sự kiện cho nút  
+        activateButton.onClick.AddListener(OnLevelComplete);
     }
 
-    public void ThuongLose()
+    // Phương thức cập nhật UI  
+    void UpdateUI()
     {
-        goldRanDom();
-        diamondR();
+        goldText.text = "Gold: " + goldAmount.ToString();
+        diamondText.text = "Diamonds: " + diamondAmount.ToString();
     }
-        void goldRanDom()
-        {
-            int randomgold = Random.Range(100, 200);
-            gold += randomgold;
-        }
 
-        void diamondR()
+    // Phương thức gọi khi nhấn nút để bật đối tượng  
+    void OnLevelComplete()
+    {
+        // Bật đối tượng khi qua màn.  
+        if (objectToActivate != null)
         {
-            int RdDiamond = Random.Range(1, 20);
-            diamond += RdDiamond;
+            objectToActivate.SetActive(true);
+            gameManager.AddGold(goldAmount);
+            gameManager.AddDiamonds(diamondAmount);
+            Debug.Log($"Đã cộng {goldAmount} vàng và {diamondAmount} kim cương!");
         }
-        void keyRanDom()
-        {
-            int RdKey = Random.Range(1, 3);
-            key += RdKey;
-        }
-        void lightBuldRanDom()
-        {
-            int RdLightBuld = Random.Range(1, 2);
-            diamond += RdLightBuld;
-        }
-    
+    }
 }

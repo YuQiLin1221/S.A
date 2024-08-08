@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using System;
+using Unity.VisualScripting;
 
 public class WinLose : MonoBehaviour
 {
-    public GameObject Win, Lose, Backgorund;
+    public GameObject Win, Lose, Backgorund, setting;
    
     public void win()
     {
@@ -14,19 +15,29 @@ public class WinLose : MonoBehaviour
         
         Backgorund.SetActive(false);
         
-        
-        
     }
     public void lose()
     {
-        Lose.SetActive(!Win.activeSelf);
+        Lose.SetActive(!Lose.activeSelf);
         Backgorund.SetActive(false);
         
     }
     public void replay()
-    {
-        Lose.SetActive(false);
+    { 
         Backgorund.SetActive(true);
-        
+        Win.SetActive(false);
+        Lose.SetActive(false);
+    }
+
+    public void exitBG()
+    {
+        setting.SetActive(!setting.activeSelf);
+        Backgorund.SetActive(false);
+    }
+
+    public void exitST()
+    {
+        setting.SetActive(false);
+        Backgorund.SetActive(true);
     }
 }
