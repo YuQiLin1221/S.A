@@ -771,7 +771,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1624463083}
         m_TargetAssemblyTypeName: ChonLMap, Assembly-CSharp
-        m_MethodName: Lv2
+        m_MethodName: Lv4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -876,7 +876,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'A: Canada'
+  m_text: 'A: 5'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1010,7 +1010,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "B: Anh Qu\u1ED1c"
+  m_text: 'B: 7'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1293,7 +1293,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1690736166}
         m_TargetAssemblyTypeName: WinLose, Assembly-CSharp
-        m_MethodName: lose
+        m_MethodName: win
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1913,7 +1913,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'D: Ice Land'
+  m_text: 'D: 10'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2313,7 +2313,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "C\xE2u H\u1ECFi: Qu\u1ED1c Gia n\xE0o l\u1EA1nh nh\u1EA5t Th\u1EBF Gi\u1EDBi?"
+  m_text: "C\xE2u H\u1ECFi: Th\u1EBF Gi\u1EDBi c\xF3 bao nhi\xEAu ch\xE2u l\u1EE5c?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3061,7 +3061,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2055310394}
         m_TargetAssemblyTypeName: ChonLMap, Assembly-CSharp
-        m_MethodName: Lv2
+        m_MethodName: Lv4
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4302,7 +4302,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1690736166}
         m_TargetAssemblyTypeName: WinLose, Assembly-CSharp
-        m_MethodName: win
+        m_MethodName: lose
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -4361,7 +4361,6 @@ GameObject:
   - component: {fileID: 1624463087}
   - component: {fileID: 1624463086}
   - component: {fileID: 1624463085}
-  - component: {fileID: 1624463084}
   - component: {fileID: 1624463083}
   m_Layer: 5
   m_Name: Image
@@ -4380,18 +4379,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e6b876b023179e8439b51bc16f92a3a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1624463084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1624463082}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bdf841b871fe69a4096f890abb5c31fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &1624463085
@@ -6296,7 +6283,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "C: Ai C\u1EADp"
+  m_text: 'C: 6'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}

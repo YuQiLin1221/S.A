@@ -13,6 +13,8 @@ public class GameManager : MonoBehaviour
         score = 0;
         gold = 0;
         Kc = 0;
+        Light = 0;
+        Key = 0;
         Debug.Log("Điểm số bắt đầu: " + score);
         Debug.Log("Vàng bắt đầu: " + gold);
         Debug.Log("Kim cương bắt đầu: " + Kc);
@@ -34,5 +36,15 @@ public class GameManager : MonoBehaviour
     {
         Kc += amount;
         Debug.Log("Kim cương hiện tại: " + Kc);
+    }
+    public void AddLight(int amount)
+    {
+        Light += amount;
+        Debug.Log("Den hiện tại: " + Light);
+    }
+    public void AddKey(int amount)
+    {
+        Key += amount;
+        Debug.Log("Chia khoa hiện tại: " + Key);
     }
 }
