@@ -27,6 +27,10 @@ public class ChonLMap : MonoBehaviour
     {
         SceneManager.LoadScene(5);
     }
+    public void Lv6()
+    {
+        SceneManager.LoadScene(6);
+    }
     public void Lv0()
     {
         SceneManager.LoadScene(0);

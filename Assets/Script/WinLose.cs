@@ -15,7 +15,9 @@ public class WinLose : MonoBehaviour
         Win.SetActive(!Win.activeSelf);
         
         Backgorund.SetActive(false);
-        
+        Lose.SetActive(false);
+        c2.SetActive(false);
+        c3.SetActive(false);
     }
     public void lose()
     {

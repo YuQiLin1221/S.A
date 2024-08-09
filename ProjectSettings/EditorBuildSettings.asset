@@ -9,18 +9,21 @@ EditorBuildSettings:
     path: Assets/Scenes/GiaoDienChinh.unity
     guid: e949b23807f42b34cab4424e30732d59
   - enabled: 1
-    path: Assets/Scenes/LV1.unity
-    guid: 8ef5d7d3c61256942aee5f562053dcc8
+    path: Assets/Scenes/LV 1.unity
+    guid: 2a670b8160b1963489beca1ddab8d754
   - enabled: 1
     path: Assets/Scenes/LV 2.unity
-    guid: 4e8415bf1baca1f469b1da6550c80e2e
+    guid: ec3fb06054399394abf4849a92c25fbe
   - enabled: 1
     path: Assets/Scenes/LV 3.unity
-    guid: aa6592135bf700b44a582653e34c0d8f
+    guid: 730d0a274320278448cd1915d22f3b10
   - enabled: 1
     path: Assets/Scenes/LV 4.unity
-    guid: 8210cb48c7a1c584690e848ab01ceaeb
+    guid: ea2287a0886bea14b9bdb2a7ae0dd007
   - enabled: 1
     path: Assets/Scenes/LV 5.unity
     guid: 30ea3b117025c5c4386d64373950ecb5
+  - enabled: 1
+    path: Assets/Scenes/map.unity
+    guid: 5c11caa84d728bf40842ed80a98a2b2d
   m_configObjects: {}

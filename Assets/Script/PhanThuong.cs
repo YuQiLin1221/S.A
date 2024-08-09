@@ -14,7 +14,7 @@ public class PhanThuong : MonoBehaviour
     public TextMeshProUGUI lightText;
     public TextMeshProUGUI keyText;
     public GameObject objectToActivate; // Tham chiếu tới đối tượng cần bật lên  
-    public Button activateButton; // Tham chiếu tới nút kích hoạt  
+    
 
     
     void Start()
@@ -29,8 +29,7 @@ public class PhanThuong : MonoBehaviour
         // Hiển thị số lượng vàng và kim cương  
         UpdateUI();
 
-        // Đăng ký sự kiện cho nút  
-        activateButton.onClick.AddListener(OnLevelComplete);
+
     }
 
     // Phương thức cập nhật UI  
