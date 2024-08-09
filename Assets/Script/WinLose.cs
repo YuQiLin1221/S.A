@@ -4,10 +4,11 @@ using UnityEngine;
 
 using System;
 using Unity.VisualScripting;
+using UnityEngine.UI;
 
 public class WinLose : MonoBehaviour
 {
-    public GameObject Win, Lose, Backgorund, setting;
+    public GameObject Win, Lose, Backgorund, setting, c2, c3, c4, c5;
    
     public void win()
     {
@@ -27,6 +28,11 @@ public class WinLose : MonoBehaviour
         Backgorund.SetActive(true);
         Win.SetActive(false);
         Lose.SetActive(false);
+        c2.SetActive(false);
+        c3.SetActive(false);
+        c4.SetActive(false);
+        c5.SetActive(false);
+
     }
 
     public void exitBG()
@@ -40,4 +46,35 @@ public class WinLose : MonoBehaviour
         setting.SetActive(false);
         Backgorund.SetActive(true);
     }
+    public void man2()
+    {
+        c2.SetActive(!c2.activeSelf);
+        Backgorund.SetActive(false);
+
+    }
+    public void man3()
+    {
+        c3.SetActive(!c3.activeSelf);
+        c2.SetActive(false);
+        Backgorund.SetActive(false);
+
+    }
+    public void man4()
+    {
+        c4.SetActive(!c4.activeSelf);
+        c2.SetActive(false);
+        c3.SetActive(false);
+        Backgorund.SetActive(false);
+
+    }
+    public void man5()
+    {
+        c5.SetActive(!c5.activeSelf);
+        c2.SetActive(false);
+        c3.SetActive(false);
+        c4.SetActive(false);
+        Backgorund.SetActive(false);
+
+    }
+
 }
