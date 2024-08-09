@@ -6,8 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/GiaoDienChinh.unity
-    guid: e949b23807f42b34cab4424e30732d59
+    path: Assets/Scenes/SampleScene.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/LV 1.unity
     guid: 2a670b8160b1963489beca1ddab8d754
@@ -23,7 +23,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/LV 5.unity
     guid: 30ea3b117025c5c4386d64373950ecb5
-  - enabled: 1
-    path: Assets/Scenes/map.unity
-    guid: 5c11caa84d728bf40842ed80a98a2b2d
   m_configObjects: {}
